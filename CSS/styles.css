@@ -1,21 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Lato&family=Nunito&family=Playfair+Display:ital@1&family=Prata&family=Raleway:ital,wght@1,100&family=Roboto&family=Roboto+Condensed&family=Teko&display=swap');
 
-    body {
+body {
         background-color: #363435;
-        padding: 50px;
-        text-align: center;
+        padding: 20px;
         font-family: 'Kanit', sans-serif;
     }
 
     /* -------------- Clases -------------- */
-
+    .background{
+        background: content-box linear-gradient(#363435, #363435, #504E4F, #636162);
+    }
     .presentacion{
         color: white;
         font-size: large;
         margin-top: 0;
         line-height: 0.6;
+        text-align: center;
     }
     .acceso{
-        margin-top: 100px;
+        margin-top: 140px;
         padding: 1em;
         text-align: center;
     }
@@ -23,7 +26,7 @@
     .form{
         height: 350px;
         width: 300px;
-        background-color: rgba(255,255,255,0.13);
+        background-color: rgba(255, 255, 255, 0.27);
         position: relative;
         right: 40px;
         transform: translate(-50%,-50%);
@@ -37,22 +40,50 @@
 
         font-family: 'Poppins',sans-serif;
         color: #ffffff;
-        letter-spacing: 0.5px;
         outline: none;
         border: none;
 
         text-align: center;
     }
     .fh3{
-        font-size: 32px;
-        font-weight: 500;
-        line-height: 42px;
+        font-size: 30px;
+        font-weight: bold;
         text-align: center;
+    }
+    .btn{
+
+        margin: auto;
+        margin-top: 25px;
+
+        padding: 15px 40px;
+        font-size: 18px;
+        font-weight: 600;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        text-align: center;
+
+        font-family: Roboto, sans-serif;
+        color: #fff;
+        background: linear-gradient(90deg, #000f3a 0%, #3a595e 100%);
+        transition : 893ms;
+        transform: translateY(0);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        cursor: pointer;
+    }
+    .btn:hover{
+        transition : 893ms;
+        padding: 10px 90px;
+        transform : translateY(-0px);
+        background: linear-gradient(90deg, #0066CC 0%, #48cae4 100%);
+        color: #0066cc;
     }
 
     .titulo{
         color: white;
-        font-family: 'Noto Sans Cherokee', sans-serif;
+        font-family: 'Poppins', sans-serif;
     }
     .label{
         color: white;
@@ -67,32 +98,16 @@
         margin-top: 20px;
         border: none;
     }
-    .bAcceder{
-        margin-top: 30px;
-        width: 60%;
-        background-color: #ffffff;
-        color: #080710;
-        padding: 15px;
-        font-size: 18px;
-        font-weight: 600;
-        border-radius: 5px;
-        border: none;
-        cursor: pointer;
-        text-align: center;
-        margin-left: 10px;
-    }
-
     .ul{
         list-style: none;
         padding: 0;
         margin: 0;
     }
-
     .inp{
         display: table-column;
         height: 50px;
         width: 90%;
-        background-color: rgba(255,255,255,0.07);
+        background-color: rgba(255, 255, 255, 0.15);
         border-radius: 10px;
         padding: 0 10px;
         margin-top: 8px;
@@ -100,6 +115,148 @@
         font-weight: 300;
         color: white;
     }
+    .inp::placeholder{
+        color: rgba(255, 255, 255, 0.53);
+    }
+
+    /* Historia */
+
+    .back{
+        padding: 40px;
+        text-align: center;
+    }
+
+    .hed{
+        width: 100%;
+        padding: 5px;
+        text-align: left;
+    }
+    .th{
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        font-size: x-large;
+        font-weight: 500;
+    }
+    .main-container{
+        background-color: rgba(255, 255, 255, 0.87);
+        padding: 60px;
+        color: black;
+        border-radius: 10px;
+        border: solid 2px transparent;
+        background-clip: padding-box;
+        box-shadow: 10px 10px 10px  rgba(46, 54, 68, 0.03);
+        backdrop-filter: blur(30px);
+        margin-top: 30px;
+    }
+    .remitidor{
+        text-align: right;
+    }
+    .personales{
+        text-align: left;
+    }
+    .antecedentes{
+        text-align: center;
+    }
+    .riesgos{
+        text-align: left;
+        display: flex;
+    }
+    .interpretacion{
+        text-align: center;
+    }
+
+    .labh{
+        color: black;
+        margin-top: 10px;
+        margin-right: 10px;
+        margin-left: 10px;
+        font-size: 1rem;
+        font-weight: 500;
+        font-family: 'Roboto', sans-serif;
+    }
+    .inh{
+        height: 40px;
+        width: 15%;
+        background-color: rgba(255,255,255,0.07);
+        border-radius: 10px;
+        border-color: rgba(255, 255, 255, 0.16);
+        padding: 0 10px;
+        margin-top: 8px;
+        font-size: 14px;
+        font-weight: 300;
+    }
+    .inhl{
+        height: 40px;
+        width: 20%;
+        background-color: rgba(255,255,255,0.07);
+        border-radius: 10px;
+        border-color: rgba(255, 255, 255, 0.16);
+        padding: 0 10px;
+        margin-top: 8px;
+        font-size: 14px;
+        font-weight: 300;
+    }
+    .inhxl{
+        height: 40px;
+        width: 50%;
+        background-color: rgba(255,255,255,0.07);
+        border-radius: 10px;
+        border-color: rgba(255, 255, 255, 0.16);
+        padding: 0 10px;
+        margin-top: 8px;
+        font-size: 14px;
+        font-weight: 300;
+    }
+    .inhch{
+        height: 40px;
+        width: 5%;
+        background-color: rgba(255, 255, 255, 0.04);
+        border-radius: 10px;
+        border-color: rgba(255, 255, 255, 0.12);
+        padding: 0 10px;
+        margin-top: 8px;
+        font-size: 14px;
+        font-weight: 300;
+    }
+    .imfloat{
+        float: left;
+        width: 7%;
+        text-align: right;
+        margin-top: 0;
+        margin-right: 20px;
+    }
+    .select{
+        height: 40px;
+        width: 15%;
+        background-color: rgba(255,255,255,0.07);
+        border-radius: 10px;
+        border-color: rgba(176, 176, 176, 0.56);
+        padding: 0 10px;
+        margin-top: 8px;
+        font-size: 14px;
+        font-weight: 300;
+        color: #636162;
+    }
+
+    .texta{
+        height: 100px;
+        width: 80%;
+        background-color: rgba(255,255,255,0.07);
+        border-radius: 10px;
+        border-color: rgba(176, 176, 176, 0.56);
+        padding: 10px;
+        font-size: 14px;
+        font-weight: 300;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .ruleh{
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+
+    /* IDS */
+
 
 
 

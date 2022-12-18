@@ -6,9 +6,171 @@
     <link rel="stylesheet" href="CSS/styles.css">
     <link rel="icon" href="favicon-2.ico">
 </head>
-<body>
-    <div class="titulo">
-        <h1> Historia Clínica para Endodoncia </h1>
+<body class="back">
+    <div class="hed">
+        <img class="imfloat" src="/Images/d1.png">
+        <p class="th"> Historia Clínica para Endodoncia </p>
+    </div>
+    <div class="main-container">
+        <div>
+            <form>
+                <ul class="ul">
+                    <li class="remitidor">
+                        <label class="labh"> Remitidor </label>
+                        <input class="inh" type="text" placeholder="Nombre">
+
+                        <label class="labh"> Fecha </label>
+                        <input class="inh" type="Date">
+                    </li>
+                    <hr class="ruleh">
+                    <h3> Datos Personales </h3>
+                    <li class="personales">
+                        <label for="nombreID" class="labh"> Paciente </label>
+                        <input id="nombreID" class="inh" type="text" placeholder="Nombre(s)">
+                        <input id="pApellidoID" class="inh" type="text" placeholder=" 1er Apellido">
+                        <input id="sApellidoID" class="inh" type="text" placeholder="2do Apellido">
+
+                        <label for="edadID" class="labh">Edad </label>
+                        <input id="edadID" class="inhch" type="number">
+
+                    </li>
+                    <li class="personales">
+                        <label for="genID" class="labh"> Género </label>
+                        <select id="genID" class="inh" >
+                            <option>Masculino</option>
+                            <option>Femenino</option>
+                            <option>Otro</option>
+                        </select>
+
+                        <label class="labh"> Domicilio </label>
+                        <input id="calleID" class="inhl" type="text" placeholder="Calle y Número">
+
+                        <input id="colID" class="inh" type="text" placeholder="Colonia">
+
+                        <input id="cpID" class="inh" type="text" placeholder="Código Postal">
+                    </li>
+                    <li class="personales">
+
+                        <label for="edoCiv" class="labh"> Estado Civil </label>
+                        <select id="edoCiv" class="inh">
+                            <option value="Soltero"> Solter@ </option>
+                            <option value="Casado"> Casad@ </option>
+                            <option value="Viudo"> Viud@ </option>
+                        </select>
+
+                        <label for="ocupID" class="labh"> Ocupación </label>
+                        <input id="ocupID" class="inh" type="text">
+
+                        <label for="telID" class="labh"> Teléfono: </label>
+                        <input id="telID" class="inh" type="tel" placeholder="+52">
+                    </li>
+                    <hr class="ruleh">
+                    <h3> Antecedentes </h3>
+                    <li class="antecedentes">
+                        <label for="patoID" class="labh"> Antecedentes Patológicos Personales </label>
+                        <input id="patoID" class="inhxl" placeholder="N/A" type="text">
+                    </li>
+                    <li class="antecedentes">
+                        <label for="tratID" class="labh"> Tratamiento Médico Actual </label>
+                        <input id="tratID" class="inhxl" placeholder="N/A" type="text">
+                    </li>
+                    <li class="antecedentes">
+                        <label for="alID" id="alIDlab" class="labh"> Alergias </label>
+                        <input id="alID" class="inhxl" placeholder="N/A" type="text">
+                    </li>
+                    <li class="antecedentes">
+                        <label for="antcID" class="labh"> Antecedentes del Caso </label>
+                        <input id="antcID" class="inhxl" placeholder="N/A" type="text">
+                    </li>
+                    <hr class="ruleh">
+                    <h3> Riesgos </h3>
+                    <li class="riesgos">
+                        <label for="diabetesID" class="labh"> Diabetes </label>
+                        <select class="select" id="diabetesID">
+                            <option value="N/A">N/A</option>
+                            <option value="Sí">Sí</option>
+                        </select>
+
+                        <label for="cardioID" class="labh"> Problemas Cardiovasculares </label>
+                        <select class="select" id="cardioID">
+                            <option value="N/A">N/A</option>
+                            <option value="Sí"> Sí </option>
+                        </select>
+
+                        <label for="cancerID" class="labh"> Cáncer </label>
+                        <select class="select" id="cancerID">
+                            <option value="N/A">N/A</option>
+                            <option value="Sí"> Sí </option>
+                        </select>
+
+
+                    </li>
+                    <li class="riesgos">
+                        <label for="epilID" class="labh"> Epilepsia </label>
+                        <select class="select" id="epilID">
+                            <option value="N/A">N/A</option>
+                            <option value="Sí">Sí</option>
+                        </select>
+
+                        <label for="hipID" class="labh"> Hipertensión </label>
+                        <select class="select" id="hipID">
+                            <option value="N/A">N/A</option>
+                            <option value="Sí"> Sí </option>
+                        </select>
+
+                        <label for="asmaID" class="labh"> Asma </label>
+                        <select class="select" id="asmaID">
+                            <option value="N/A">N/A</option>
+                            <option value="Sí"> Sí </option>
+                        </select>
+
+                    </li>
+                    <li class="riesgos">
+
+                        <label for="convID" class="labh"> Convulsiones </label>
+                        <select class="select" id="convID">
+                            <option value="N/A">N/A</option>
+                            <option value="Sí"> Sí </option>
+                        </select>
+
+                        <label for="viID" class="labh"> VIH/SIDA </label>
+                        <select class="select" id="viID">
+                            <option value="N/A">N/A</option>
+                            <option value="Sí"> Sí </option>
+                        </select>
+
+                        <label for="inmunoID" class="labh"> Inmunodeficiencia </label>
+                        <select class="select" id="inmunoID">
+                            <option value="N/A">N/A</option>
+                            <option value="Sí"> Sí </option>
+                        </select>
+
+
+                    </li>
+                    <li class="riesgos">
+
+                        <label for="fiebID" class="labh"> Fiebre Reumática </label>
+                        <select class="select" id="fiebID">
+                            <option value="N/A">N/A</option>
+                            <option value="Sí"> Sí </option>
+                        </select>
+
+                        <label for="tubID" class="labh"> Tuberculosis </label>
+                        <select class="select" id="tubID">
+                            <option value="N/A">N/A</option>
+                            <option value="Sí"> Sí </option>
+                        </select>
+                    </li>
+                    <hr>
+                    <h3> Interpretación Médica</h3>
+                    <li class="interpretacion">
+                        <textarea id="interpretacionID" name="interpreta" rows="4" cols="50" class="texta"> </textarea>
+                    </li>
+
+
+                </ul>
+            </form>
+        </div>
     </div>
 </body>
 </html>
