@@ -9,13 +9,14 @@
 <body class="back">
     <div class="hed">
         <img class="imfloat" src="/Images/d1.png">
-        <p class="th"> Historia Clínica para Endodoncia </p>
+        <p class="tith"> Historia Clínica para Endodoncia </p>
     </div>
     <div class="main-container">
         <div>
             <form>
                 <ul class="ul">
                     <li class="remitidor">
+
                         <label class="labh"> Remitidor </label>
                         <input class="inh" type="text" placeholder="Nombre">
 
@@ -82,95 +83,334 @@
                         <label for="antcID" class="labh"> Antecedentes del Caso </label>
                         <input id="antcID" class="inhxl" placeholder="N/A" type="text">
                     </li>
+
+                    <hr class="ruleh">
+                    <h3> Antecedentes del Caso </h3>
+                    <li class="interpretacion">
+                        <textarea id="anteCasoID" name="antecedentesCaso" rows="4" cols="50" class="texta"> </textarea>
+                    </li>
+
+
                     <hr class="ruleh">
                     <h3> Riesgos </h3>
                     <li class="riesgos">
-                        <label for="diabetesID" class="labh"> Diabetes </label>
-                        <select class="select" id="diabetesID">
-                            <option value="N/A">N/A</option>
-                            <option value="Sí">Sí</option>
-                        </select>
+                        <ul class="ul">
+                            <li>
+                                <label for="cancerID" class="labh"> Cáncer </label>
+                                <select class="select" id="cancerID">
+                                    <option value="N/A">N/A</option>
+                                    <option value="Sí"> Sí </option>
+                                </select>
+                            </li>
+                            <li>
+                                <label for="epilID" class="labh"> Epilepsia </label>
+                                <select class="select" id="epilID">
+                                    <option value="N/A">N/A</option>
+                                    <option value="Sí">Sí</option>
+                                </select>
+                            </li>
+                            <li>
+                                <label for="asmaID" class="labh"> Asma </label>
+                                <select class="select" id="asmaID">
+                                    <option value="N/A">N/A</option>
+                                    <option value="Sí"> Sí </option>
+                                </select>
+                            </li>
+                            <li>
+                                <label for="viID" class="labh"> VIH/SIDA </label>
+                                <select class="select" id="viID">
+                                    <option value="N/A">N/A</option>
+                                    <option value="Sí"> Sí </option>
+                                </select>
+                            </li>
+                            <li>
+                                <label for="fiebID" class="labh"> Fiebre Reumática </label>
+                                <select class="select" id="fiebID">
+                                    <option value="N/A">N/A</option>
+                                    <option value="Sí"> Sí </option>
+                                </select>
+                            </li>
+                        </ul>
 
-                        <label for="cardioID" class="labh"> Problemas Cardiovasculares </label>
-                        <select class="select" id="cardioID">
-                            <option value="N/A">N/A</option>
-                            <option value="Sí"> Sí </option>
-                        </select>
+                        <label class="labh imfloat tfloat"> Otro: </label>
+                        <textarea class="imfloat textas"></textarea>
 
-                        <label for="cancerID" class="labh"> Cáncer </label>
-                        <select class="select" id="cancerID">
-                            <option value="N/A">N/A</option>
-                            <option value="Sí"> Sí </option>
-                        </select>
-
+                        <ul class="ul">
+                            <li>
+                                <label for="diabetesID" class="labh"> Diabetes </label>
+                                <select class="select" id="diabetesID">
+                                    <option value="N/A">N/A</option>
+                                    <option value="Sí">Sí</option>
+                                </select>
+                            </li>
+                            <li>
+                                <label for="cardioID" class="labh"> Problemas Cardiovasculares </label>
+                                <select class="select" id="cardioID">
+                                    <option value="N/A">N/A</option>
+                                    <option value="Sí"> Sí </option>
+                                </select>
+                            </li>
+                            <li>
+                                <label for="hipID" class="labh"> Hipertensión </label>
+                                <select class="select" id="hipID">
+                                    <option value="N/A">N/A</option>
+                                    <option value="Sí"> Sí </option>
+                                </select>
+                            </li>
+                            <li>
+                                <label for="convID" class="labh"> Convulsiones </label>
+                                <select class="select" id="convID">
+                                    <option value="N/A">N/A</option>
+                                    <option value="Sí"> Sí </option>
+                                </select>
+                            </li>
+                            <li>
+                                <label for="inmunoID" class="labh"> Inmunodeficiencia </label>
+                                <select class="select" id="inmunoID">
+                                    <option value="N/A">N/A</option>
+                                    <option value="Sí"> Sí </option>
+                                </select>
+                            </li>
+                            <li>
+                                <label for="tubID" class="labh"> Tuberculosis </label>
+                                <select class="select" id="tubID">
+                                    <option value="N/A">N/A</option>
+                                    <option value="Sí"> Sí </option>
+                                </select>
+                            </li>
+                        </ul>
 
                     </li>
-                    <li class="riesgos">
-                        <label for="epilID" class="labh"> Epilepsia </label>
-                        <select class="select" id="epilID">
-                            <option value="N/A">N/A</option>
-                            <option value="Sí">Sí</option>
-                        </select>
 
-                        <label for="hipID" class="labh"> Hipertensión </label>
-                        <select class="select" id="hipID">
-                            <option value="N/A">N/A</option>
-                            <option value="Sí"> Sí </option>
-                        </select>
-
-                        <label for="asmaID" class="labh"> Asma </label>
-                        <select class="select" id="asmaID">
-                            <option value="N/A">N/A</option>
-                            <option value="Sí"> Sí </option>
-                        </select>
-
-                    </li>
-                    <li class="riesgos">
-
-                        <label for="convID" class="labh"> Convulsiones </label>
-                        <select class="select" id="convID">
-                            <option value="N/A">N/A</option>
-                            <option value="Sí"> Sí </option>
-                        </select>
-
-                        <label for="viID" class="labh"> VIH/SIDA </label>
-                        <select class="select" id="viID">
-                            <option value="N/A">N/A</option>
-                            <option value="Sí"> Sí </option>
-                        </select>
-
-                        <label for="inmunoID" class="labh"> Inmunodeficiencia </label>
-                        <select class="select" id="inmunoID">
-                            <option value="N/A">N/A</option>
-                            <option value="Sí"> Sí </option>
-                        </select>
-
-
-                    </li>
-                    <li class="riesgos">
-
-                        <label for="fiebID" class="labh"> Fiebre Reumática </label>
-                        <select class="select" id="fiebID">
-                            <option value="N/A">N/A</option>
-                            <option value="Sí"> Sí </option>
-                        </select>
-
-                        <label for="tubID" class="labh"> Tuberculosis </label>
-                        <select class="select" id="tubID">
-                            <option value="N/A">N/A</option>
-                            <option value="Sí"> Sí </option>
-                        </select>
-                    </li>
-                    <hr>
+                    <hr class="ruleh">
                     <h3> Interpretación Médica</h3>
                     <li class="interpretacion">
-                        <textarea id="interpretacionID" name="interpreta" rows="4" cols="50" class="texta"> </textarea>
+                        <label class="labh" for="fracID">Fractura:</label>
+                        <input type="text" class="inhl" placeholder="N/A" id="fracID">
+                    </li>
+                    <li class="interpretacion">
+                        <label class="labh" for="restID">Con Restauración:</label>
+                        <input type="text" class="inhl" placeholder="N/A" id="restID">
+                    </li>
+                    <li class="interpretacion">
+                        <label class="labh" for="camColorID">Cambio de Coloración:</label>
+                        <input type="text" class="inhl" placeholder="N/A" id="camColorID">
+                    </li>
+                    <hr class="rule">
+                    <li class="interpretacion">
+                        <label class="labh" for="dolorID"> Dolor: </label>
+                        <select class="select" id="dolorID">
+                            <option value="Ausente">Ausente</option>
+                            <option value="Espontaneo">Espontáneo</option>
+                            <option value="Agudo">Agudo</option>
+                            <option value="Persistente">Persistente</option>
+                            <option value="nocturno">Nocturno</option>
+                            <option value="morder">Al morder</option>
+                            <option value="frio">Provocado al frío</option>
+                            <option value="calor">Provocado al calor</option>
+                        </select>
+
+                        <label class="labh" for="estadoID"> Estado de la pieza a tratar: </label>
+                        <select class="selectl" id="estadoID">
+                            <option value="Sana">Aparentemente Sana</option>
+                            <option value="Caries">Con Caries</option>
+                            <option value="SCavidad">Sin Cavidad</option>
+                            <option value="Cavidad">Con Cavidad</option>
+                            <option value="oclusal">Oclusal</option>
+                            <option value="mesial">Mesial</option>
+                            <option value="distal">Distal</option>
+                            <option value="lingual">Lingual</option>
+                            <option value="palatina">Palatina</option>
+                            <option value="Cervical">Cervical</option>
+                            <option value="radicular">Radicular</option>
+                            <option value="g1">Grado 1</option>
+                            <option value="g2">Grado 2</option>
+                            <option value="g3">Grado 3</option>
+                        </select>
+
+                    </li>
+                    <hr class="rule">
+
+                    <hr class="ruleh">
+
+                    <li class="interpretacion">
+                        <label class="enlabh" for="cliniID"> Interpretación Clínica: </label>
+                        <input class="inhxl" type="text" id="cliniID">
+                    </li>
+                    <li class="interpretacion">
+                        <label class="enlabh" for="radioID"> Interpretación Radiográfica: </label>
+                        <input class="inhxl" type="text" id="radioID">
+                    </li>
+                    <li class="interpretacion">
+                        <label class="enlabh" for="diagID"> Diagnóstico Clínico: </label>
+                        <input class="inhxl" type="text" id="diagID">
+                    </li>
+                    <li class="interpretacion">
+                        <label class="enlabh" for="trataID"> Tratamiento: </label>
+                        <input class="inhxl" type="text" id="trataID">
+                    </li>
+                    <li class="interpretacion">
+                        <label class="enlabh" for="pronoID"> Pronóstico: </label>
+                        <input class="inhxl" type="text" id="pronoID">
                     </li>
 
+                    <hr class="ruleh">
 
+                    <h3>Observaciones</h3>
+                    <textarea class="texta"></textarea>
+                    <hr class="rule">
+
+                    <hr class="ruleh">
+                    <hr class="rule">
+
+                    <li class="conductos">
+                        <table class="table">
+                            <tr class="tr">
+                                <th class="th">Conducto</th>
+                                <th class="th">Conducto (MM)</th>
+                                <th class="th">Referencia</th>
+                                <th class="th">Lima Maestra</th>
+                                <th class="th">Cono Maestro</th>
+                            </tr>
+                            <tr class="tr">
+                                <td class="td">
+                                    <input type="text" class="inpInv" id="conductoID1">
+                                </td>
+                                <td class="td">
+                                    <input type="text" class="inpInv" id="conductoMMID1">
+                                </td>
+                                <td class="td">
+                                    <input type="text" class="inpInv" id="referenciaID1">
+                                </td>
+                                <td class="td">
+                                    <input type="text" class="inpInv" id="lMaestraID1">
+                                </td>
+                                <td class="td">
+                                    <input type="text" class="inpInv" id="cMaestroID1">
+                                </td>
+                            </tr>
+                            <tr class="tr">
+                                <td class="td">
+                                    <input type="text" class="inpInv" id="conductoID2">
+                                </td>
+                                <td class="td">
+                                    <input type="text" class="inpInv" id="conductoMMID2">
+                                </td>
+                                <td class="td">
+                                    <input type="text" class="inpInv" id="referenciaID2">
+                                </td>
+                                <td class="td">
+                                    <input type="text" class="inpInv" id="lMaestraID2">
+                                </td>
+                                <td class="td">
+                                    <input type="text" class="inpInv" id="cMaestroID2">
+                                </td>
+                            </tr>
+                            <tr class="tr">
+                                <td class="td">
+                                    <input type="text" class="inpInv" id="conductoID3">
+                                </td>
+                                <td class="td">
+                                    <input type="text" class="inpInv" id="conductoMMID3">
+                                </td>
+                                <td class="td">
+                                    <input type="text" class="inpInv" id="referenciaID3">
+                                </td>
+                                <td class="td">
+                                    <input type="text" class="inpInv" id="lMaestraID3">
+                                </td>
+                                <td class="td">
+                                    <input type="text" class="inpInv" id="cMaestroID3">
+                                </td>
+                            </tr>
+                            <tr class="tr">
+                                <td class="td">
+                                    <input type="text" class="inpInv" id="conductoID4">
+                                </td>
+                                <td class="td">
+                                    <input type="text" class="inpInv" id="conductoMMID4">
+                                </td>
+                                <td class="td">
+                                    <input type="text" class="inpInv" id="referenciaID4">
+                                </td>
+                                <td class="td">
+                                    <input type="text" class="inpInv" id="lMaestraID4">
+                                </td>
+                                <td class="td">
+                                    <input type="text" class="inpInv" id="cMaestroID4">
+                                </td>
+                            </tr>
+                            <tr class="tr">
+                                <td class="td">
+                                    <input type="text" class="inpInv" id="conductoID5">
+                                </td>
+                                <td class="td">
+                                    <input type="text" class="inpInv" id="conductoMMID5">
+                                </td>
+                                <td class="td">
+                                    <input type="text" class="inpInv" id="referenciaID5">
+                                </td>
+                                <td class="td">
+                                    <input type="text" class="inpInv" id="lMaestraID5">
+                                </td>
+                                <td class="td">
+                                    <input type="text" class="inpInv" id="cMaestroID5">
+                                </td>
+                            </tr>
+
+                        </table>
+                    </li>
+                    <hr class="ruleh">
+                    <hr class="rule">
+
+                    <li class="tecnica">
+                        <label class="enlabh" for="tecInstID"> Técnica de Instrumentación: </label>
+                        <input class="inhxl" type="text" id="tecInstID">
+                    </li>
+                    <li class="tecnica">
+                        <label for="tecObtID" class="enlabh">Técnica de Obturación:</label>
+                        <input class="inhxl" type="text" id="tecObtID">
+                    </li>
+                    <li class="tecnica">
+                        <label for="cemObtID" class="enlabh">Cemento de Obturación</label>
+                        <input id="cemObtID" class="inhxl" type="text">
+                    </li>
+                    <li class="tecnica">
+                        <label for="medIntrID" class="enlabh">Medicación Intraconducto:</label>
+                        <input id="medIntrID" class="inhxl" type="text">
+                    </li>
+                    <li class="tecnica">
+                        <label for="medSistID" class="enlabh">Medicación Sistémica:</label>
+                        <input id="medSistID" class="inhxl" type="text">
+                    </li>
+                    <li class="tecnica">
+                        <label for="obtProvID" class="enlabh">Obturación Provisional:</label>
+                        <input class="inhxl" id="obtProvID" type="text">
+                    </li>
+                    <li class="tecnica">
+                        <label for="procAdID" class="enlabh">Procedimientos Adicionales:</label>
+                        <input class="inhxl" type="text" id="procAdID">
+                    </li>
+                    <hr class="rule">
+
+                    <hr class="ruleh">
+                    <h3>Observaciones Finales</h3>
+                    <textarea class="texta"></textarea>
+
+                    <hr class="ruleh">
+                    <h2> FIRMAS </h2>
                 </ul>
             </form>
         </div>
     </div>
+    <div class="presupuesto">
+        <button class="btnh" type="submit"> Presupuesto </button>
+        <button class="btnh" type="submit"> Terminar </button>
+    </div>
+    <footer class="foot">
+        <p> CD. Erendy Anahí Hernández Pérez</p>
+        <p> Céd. Prof. 8126068</p>
+    </footer>
+
 </body>
 </html>
