@@ -340,6 +340,9 @@ body {
         border: 1px solid #dddddd;
         text-align: left;
         padding: 8px;
+        font-family: Poppins, sans-serif;
+        font-weight: 500;
+        font-size: 16px;
     }
     .th{
         border: 1px solid #dddddd;
@@ -347,6 +350,8 @@ body {
         padding: 8px;
         color: black;
         font-size: 18px;
+        font-weight: 500;
+        font-family: Poppins, sans-serif;
     }
     .tr:nth-child(even) {
         background-color: #dddddd;
@@ -385,8 +390,41 @@ body {
         color: #0066cc;
     }
 
+    .btn-regresar-container-h{
+        margin-top: 50px;
+        text-align: left;
+        position: absolute;
+        float: left;
+    }
+    .btn-regresar-container{
+        margin-top: 65px;
+        text-align: left;
+        position: absolute;
+        float: left;
+    }
+    .btn-regresar{
+        padding: 10px;
+        font-size: 16px;
+        font-weight: 400;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+
+        font-family: Roboto, sans-serif;
+        color: #444e54;
+        background: none;
+        transition : 500ms;
+        transform: translateY(0);
+        align-items: center;
+    }
+    .btn-regresar:hover{
+        font-size: 18px;
+        color: #0066cc;
+    }
+
     /* Directorio */
     .direcBack{
+        padding: 40px;
         text-align: center;
         background-color: #969595;
     }
@@ -446,7 +484,7 @@ body {
         color: #484647;
     }
 
-    .diect-main-container{
+    .direct-main-container{
         background-color: rgba(255, 255, 255, 0.87);
         padding: 60px 60px 30px 60px;
         color: black;
@@ -480,6 +518,15 @@ body {
     }
     .cerrar-sesion{
         margin-top: 60px;
+    }
+
+    /* Registros */
+    .registros-main-container{
+
+    }
+    .h2-registros{
+        font-weight: 400;
+        color: #636162;
     }
 
 
