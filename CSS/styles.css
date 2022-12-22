@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Lato&family=Nunito&family=Playfair+Display:ital@1&family=Prata&family=Raleway:ital,wght@1,100&family=Roboto&family=Roboto+Condensed&family=Teko&display=swap');
 
+
 body {
         background-color: #363435;
         padding: 20px;
@@ -64,13 +65,12 @@ body {
 
         font-family: Roboto, sans-serif;
         color: #fff;
-        background: linear-gradient(90deg, #000f3a 0%, #606060 100%);
+        background: linear-gradient(90deg, #00091c 0%, #606060 100%);
         transition : 893ms;
         transform: translateY(0);
         display: flex;
         flex-direction: row;
         align-items: center;
-        cursor: pointer;
     }
     .btn:hover{
         transition : 893ms;
@@ -101,6 +101,12 @@ body {
         list-style: none;
         padding: 0;
         margin: 0;
+    }
+    .ulf{
+        list-style: none;
+        padding: 0;
+        margin-right: auto;
+        float: left;
     }
     .inp{
         display: table-column;
@@ -219,6 +225,18 @@ body {
         font-size: 14px;
         font-weight: 300;
     }
+    .inhlpx{
+        height: 40px;
+        width: 40%;
+        background-color: rgba(255,255,255,0.07);
+        border-radius: 10px;
+        border-color: rgba(255, 255, 255, 0.16);
+        padding: 0 10px;
+        margin-top: 8px;
+        font-size: 14px;
+        font-weight: 300;
+
+    }
     .inhxl{
         height: 40px;
         width: 50%;
@@ -272,6 +290,18 @@ body {
         font-weight: 300;
         color: #636162;
     }
+    .selectxl{
+        height: 40px;
+        width: 45%;
+        background-color: rgba(255,255,255,0.07);
+        border-radius: 10px;
+        border-color: rgba(176, 176, 176, 0.56);
+        padding: 0 10px;
+        margin-top: 8px;
+        font-size: 14px;
+        font-weight: 300;
+        color: #636162;
+    }
 
     .texta{
         height: 100px;
@@ -287,7 +317,7 @@ body {
     .textas{
         height: 50px;
         margin-bottom: 200px;
-        width: 40%;
+        width: 30%;
         background-color: rgba(255,255,255,0.07);
         border-radius: 10px;
         border-color: rgba(176, 176, 176, 0.56);
@@ -355,6 +385,8 @@ body {
         background: linear-gradient(90deg, #0066CC 0%, #48cae4 100%);
         color: #8ec3ff;
     }
+
+    /* Presupuesto */
 
     /* IDS */
 
