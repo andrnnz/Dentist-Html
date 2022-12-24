@@ -168,6 +168,42 @@ body {
         text-align: left;
     }
 
+    .adeudos-main-container{
+        background-color: rgba(255, 255, 255, 0.87);
+        padding: 60px;
+        color: black;
+        border-radius: 10px;
+        border: solid 2px transparent;
+        background-clip: padding-box;
+        box-shadow: 10px 10px 10px  rgba(46, 54, 68, 0.03);
+        backdrop-filter: blur(30px);
+        margin-top: 30px;
+        width: 50%;
+    }
+    .adeudos-container{
+        text-align: left;
+    }
+
+    .adeudo-lista{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background-color: rgba(154, 150, 152, 0.65);
+        padding: 20px;
+        transition : 893ms;
+        border-radius: 10px;
+    }
+    .adeudo-lista:hover{
+        background-color: rgba(213, 212, 212, 0.71);
+        color: #2e9aff;
+    }
+    .adeudo-row{
+        text-align: left;
+        position: relative;
+        display: inline-block;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
     /*Botones */
     .btn{
         margin: auto;
@@ -300,6 +336,29 @@ body {
         align-items: center;
     }
     .btn-busqueda:hover{
+        background: linear-gradient(90deg, #5f9cd5 0%, #96d1e0 100%);
+        color: #0066cc;
+        padding: 15px 35px;
+    }
+
+    .btn-adeudo{
+        float: left;
+        margin-right: 15px;
+        padding: 15px 30px;
+        font-size: 18px;
+        font-weight: 600;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+
+        font-family: Roboto, sans-serif;
+        color: #fff;
+        background: linear-gradient(90deg, #707070 0%, rgba(102, 118, 124, 0.74) 100%);
+        transition : 893ms;
+        transform: translateY(0);
+        align-items: center;
+    }
+    .btn-adeudo:hover{
         background: linear-gradient(90deg, #5f9cd5 0%, #96d1e0 100%);
         color: #0066cc;
         padding: 15px 35px;
