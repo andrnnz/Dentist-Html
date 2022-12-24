@@ -8,22 +8,39 @@ body {
     }
 
     /* -------------- Clases -------------- */
+
+    /*Formatos de Background */
     .background{
         background: content-box linear-gradient(#363435, #363435, #504E4F, #636162);
     }
-    .presentacion{
-        color: white;
-        font-size: large;
-        margin-top: 0;
-        line-height: 0.6;
+    .back{
+    padding: 40px;
+    text-align: center;
+}
+    .direcBack{
+        padding: 40px;
         text-align: center;
-    }
-    .acceso{
-        margin-top: 140px;
-        padding: 1em;
-        text-align: center;
+        background-color: #969595;
     }
 
+    /*Contenedores*/
+
+    .main-container{
+    background-color: rgba(255, 255, 255, 0.87);
+    padding: 60px;
+    color: black;
+    border-radius: 10px;
+    border: solid 2px transparent;
+    background-clip: padding-box;
+    box-shadow: 10px 10px 10px  rgba(46, 54, 68, 0.03);
+    backdrop-filter: blur(30px);
+    margin-top: 30px;
+}
+    .hed{
+        width: 100%;
+        padding: 5px;
+        text-align: left;
+    }
     .form{
         height: 350px;
         width: 300px;
@@ -46,11 +63,112 @@ body {
 
         text-align: center;
     }
-    .fh3{
-        font-size: 30px;
-        font-weight: bold;
+    .foot{
+        padding: 20px;
+        margin-top: 50px;
+        line-height: 0.5;
+        color: rgba(255, 255, 255, 0.53);
+        font-weight: 200;
+    }
+
+    .presentacion{
+        color: white;
+        font-size: large;
+        margin-top: 0;
+        line-height: 0.6;
         text-align: center;
     }
+    .acceso{
+        margin-top: 140px;
+        padding: 1em;
+        text-align: center;
+    }
+
+    .presupuesto{
+        margin-top: 50px;
+    }
+    .remitidor{
+        text-align: right;
+    }
+    .personales{
+        text-align: left;
+    }
+    .antecedentes{
+        text-align: right;
+    }
+    .riesgos{
+        text-align: right;
+    }
+    .interpretacion{
+        text-align: right;
+    }
+    .tecnica{
+        text-align: right;
+    }
+
+    .btn-regresar-container-h{
+        margin-top: 50px;
+        text-align: left;
+        position: absolute;
+        float: left;
+    }
+    .btn-regresar-container{
+        margin-top: 65px;
+        text-align: left;
+        position: absolute;
+        float: left;
+    }
+
+    .direct-main-container{
+        background-color: rgba(255, 255, 255, 0.87);
+        padding: 60px 60px 30px 60px;
+        color: black;
+        border-radius: 10px;
+        border: solid 2px transparent;
+        background-clip: padding-box;
+        box-shadow: 10px 10px 10px  rgba(46, 54, 68, 0.03);
+        backdrop-filter: blur(30px);
+        margin-top: 30px;
+    }
+    .directContainer{
+        text-align: left;
+        position: relative;
+        display: inline-block;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    .btn-direct-container{
+        text-align: center;
+    }
+    .cerrar-sesion{
+        margin-top: 60px;
+    }
+
+    .registros-main-container{
+        background-color: rgba(255, 255, 255, 0.87);
+        padding: 60px 60px 30px 60px;
+        color: black;
+        border-radius: 10px;
+        border: solid 2px transparent;
+        background-clip: padding-box;
+        box-shadow: 10px 10px 10px  rgba(46, 54, 68, 0.03);
+        backdrop-filter: blur(30px);
+        margin-top: 30px;
+    }
+    .busqueda{
+        margin-top: 20px;
+        text-align: left;
+    }
+    .btn-busqueda-container{
+        text-align: center;
+        margin-top: 30px;
+    }
+    .btn-regresar-container-busqueda{
+        margin-top: 100px;
+        text-align: left;
+    }
+
+    /*Botones */
     .btn{
         margin: auto;
         margin-top: 25px;
@@ -80,10 +198,149 @@ body {
         color: #0066cc;
     }
 
+    .btnh{
+        margin-right: 15px;
+        padding: 15px 40px;
+        font-size: 18px;
+        font-weight: 600;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+
+        font-family: Roboto, sans-serif;
+        color: #fff;
+        background: linear-gradient(90deg, #707070 0%, rgba(102, 118, 124, 0.74) 100%);
+        transition : 893ms;
+        transform: translateY(0);
+        align-items: center;
+    }
+    .btnh:hover{
+        transition : 893ms;
+        padding: 15px 45px;
+        transform : translateY(-0px);
+        background: linear-gradient(90deg, #5f9cd5 0%, #96d1e0 100%);;
+        color: #0066cc;
+    }
+
+    .btn-regresar{
+        padding: 10px;
+        font-size: 16px;
+        font-weight: 400;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+
+        font-family: Roboto, sans-serif;
+        color: #444e54;
+        background: none;
+        transition : 500ms;
+        transform: translateY(0);
+        align-items: center;
+    }
+    .btn-regresar:hover{
+        font-size: 18px;
+        color: #0066cc;
+    }
+
+    .btnDirect {
+        background-color: #d5d5d5;
+        background-size: cover;
+        background-position: center;
+        display: inline-block;
+        border: none;
+        padding: 20px;
+        width: 100px;
+        border-radius: 900px;
+        height: 100px;
+        transition: all 0.5s;
+        cursor: pointer;
+    }
+    .btnDirect:hover {
+        background: linear-gradient(90deg, #5f9cd5 0%, #96d1e0 100%);
+        color: #0066cc;
+        width: 110px;
+        height: 110px;
+    }
+    .btn-cerrar-sesion{
+        margin-right: 15px;
+        padding: 15px 30px;
+        font-size: 18px;
+        font-weight: 600;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+
+        font-family: Roboto, sans-serif;
+        color: #fff;
+        background: linear-gradient(90deg, #707070 0%, rgba(102, 118, 124, 0.74) 100%);
+        transition : 893ms;
+        transform: translateY(0);
+        align-items: center;
+    }
+    .btn-cerrar-sesion:hover{
+        background: linear-gradient(90deg, #5f9cd5 0%, #96d1e0 100%);
+        color: #0066cc;
+        padding: 15px 35px;
+    }
+
+    .btn-busqueda{
+        margin-right: 15px;
+        padding: 15px 30px;
+        font-size: 18px;
+        font-weight: 600;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+
+        font-family: Roboto, sans-serif;
+        color: #fff;
+        background: linear-gradient(90deg, #707070 0%, rgba(102, 118, 124, 0.74) 100%);
+        transition : 893ms;
+        transform: translateY(0);
+        align-items: center;
+    }
+    .btn-busqueda:hover{
+        background: linear-gradient(90deg, #5f9cd5 0%, #96d1e0 100%);
+        color: #0066cc;
+        padding: 15px 35px;
+    }
+
+    /*Texto*/
+
     .titulo{
         color: white;
         font-family: 'Poppins', sans-serif;
     }
+    .tith{
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        font-size: x-large;
+        font-weight: 500;
+    }
+    .tit-direct{
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        font-size: x-large;
+        font-weight: 500;
+        margin-top: 20px;
+    }
+
+    .h2-registros{
+        font-weight: 400;
+        color: #636162;
+    }
+
+    .fh3{
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .h3-direct{
+        font-family: Roboto, sans-serif;
+        font-weight: 400;
+        color: #484647;
+    }
+
     .label{
         color: white;
         width: 90px;
@@ -93,97 +350,6 @@ body {
         font-weight: 500;
         text-align: left;
     }
-    .rule{
-        margin-top: 20px;
-        border: none;
-    }
-    .ul{
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
-    .ulf{
-        list-style: none;
-        padding: 0;
-        margin-right: auto;
-        float: left;
-    }
-    .inp{
-        display: table-column;
-        height: 50px;
-        width: 90%;
-        background-color: rgba(255, 255, 255, 0.15);
-        border-radius: 10px;
-        padding: 0 10px;
-        margin-top: 8px;
-        font-size: 14px;
-        font-weight: 300;
-        color: white;
-    }
-    .inp::placeholder{
-        color: rgba(255, 255, 255, 0.53);
-    }
-
-    /* Historia */
-
-    .back{
-        padding: 40px;
-        text-align: center;
-    }
-
-    .hed{
-        width: 100%;
-        padding: 5px;
-        text-align: left;
-    }
-    .tith{
-        font-family: 'Poppins', sans-serif;
-        color: white;
-        font-size: x-large;
-        font-weight: 500;
-    }
-    .main-container{
-        background-color: rgba(255, 255, 255, 0.87);
-        padding: 60px;
-        color: black;
-        border-radius: 10px;
-        border: solid 2px transparent;
-        background-clip: padding-box;
-        box-shadow: 10px 10px 10px  rgba(46, 54, 68, 0.03);
-        backdrop-filter: blur(30px);
-        margin-top: 30px;
-    }
-    .presupuesto{
-        margin-top: 50px;
-    }
-    .foot{
-        padding: 20px;
-        margin-top: 50px;
-        line-height: 0.5;
-        color: rgba(255, 255, 255, 0.53);
-        font-weight: 200;
-    }
-
-
-    .remitidor{
-        text-align: right;
-    }
-    .personales{
-        text-align: left;
-    }
-    .antecedentes{
-        text-align: right;
-    }
-    .riesgos{
-       text-align: right;
-    }
-    .interpretacion{
-        text-align: right;
-    }
-    .tecnica{
-        text-align: right;
-    }
-
     .labh{
         color: black;
         margin-top: 10px;
@@ -202,6 +368,56 @@ body {
         font-weight: 900;
         font-family: 'Roboto', sans-serif;
     }
+    .label-registros{
+        color: #5d5d5d;
+        margin-top: 10px;
+        margin-right: 10px;
+        margin-left: 10px;
+        font-size: 1rem;
+        font-weight: 500;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    /*Reglas horizontales (<hr>)*/
+    .rule{
+        margin-top: 20px;
+        border: none;
+    }
+    .ruleh{
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+
+    /*Lista*/
+    .ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    .ulf{
+        list-style: none;
+        padding: 0;
+        margin-right: auto;
+        float: left;
+    }
+
+    /*Inputs */
+    .inp{
+        display: table-column;
+        height: 50px;
+        width: 90%;
+        background-color: rgba(255, 255, 255, 0.15);
+        border-radius: 10px;
+        padding: 0 10px;
+        margin-top: 8px;
+        font-size: 14px;
+        font-weight: 300;
+        color: white;
+    }
+    .inp::placeholder{
+        color: rgba(255, 255, 255, 0.53);
+    }
+
     .inh{
         height: 40px;
         width: 15%;
@@ -258,13 +474,31 @@ body {
         font-size: 14px;
         font-weight: 300;
     }
-    .imfloat{
-        float: left;
-        width: 7%;
-        text-align: right;
-        margin-top: 0;
-        margin-right: 20px;
+
+    .inpInv{
+        height: 100%;
+        width: 90%;
+        background-color: rgba(255, 255, 255, 0);
+        border: none;
+        padding: 10px;
+        font-size: 14px;
+        font-weight: 300;
     }
+
+    .input-Busqueda{
+        height: 40px;
+        width: 50%;
+        background-color: rgba(255,255,255,0.07);
+        border-radius: 10px;
+        border-color: rgba(70, 70, 70, 0.32);
+        padding: 0 10px;
+        margin-top: 8px;
+        font-size: 14px;
+        font-weight: 300;
+    }
+
+    /*Select*/
+
     .select{
         height: 40px;
         width: 15%;
@@ -326,11 +560,7 @@ body {
         font-family: 'Roboto', sans-serif;
     }
 
-    .ruleh{
-        margin-top: 15px;
-        margin-bottom: 10px;
-    }
-
+    /*Table*/
     .table{
         font-family: 'Roboto', sans-serif;
         border-collapse: collapse;
@@ -357,153 +587,17 @@ body {
         background-color: #dddddd;
     }
 
-    .inpInv{
-        height: 100%;
-        width: 90%;
-        background-color: rgba(255, 255, 255, 0);
-        border: none;
-        padding: 10px;
-        font-size: 14px;
-        font-weight: 300;
-    }
-    .btnh{
-        margin-right: 15px;
-        padding: 15px 40px;
-        font-size: 18px;
-        font-weight: 600;
-        border-radius: 5px;
-        border: none;
-        cursor: pointer;
+    /* Imágenes */
 
-        font-family: Roboto, sans-serif;
-        color: #fff;
-        background: linear-gradient(90deg, #707070 0%, rgba(102, 118, 124, 0.74) 100%);
-        transition : 893ms;
-        transform: translateY(0);
-        align-items: center;
-    }
-    .btnh:hover{
-        transition : 893ms;
-        padding: 15px 45px;
-        transform : translateY(-0px);
-        background: linear-gradient(90deg, #5f9cd5 0%, #96d1e0 100%);;
-        color: #0066cc;
-    }
-
-    .btn-regresar-container-h{
-        margin-top: 50px;
-        text-align: left;
-        position: absolute;
+    .imfloat{
         float: left;
-    }
-    .btn-regresar-container{
-        margin-top: 65px;
-        text-align: left;
-        position: absolute;
-        float: left;
-    }
-    .btn-regresar{
-        padding: 10px;
-        font-size: 16px;
-        font-weight: 400;
-        border-radius: 10px;
-        border: none;
-        cursor: pointer;
-
-        font-family: Roboto, sans-serif;
-        color: #444e54;
-        background: none;
-        transition : 500ms;
-        transform: translateY(0);
-        align-items: center;
-    }
-    .btn-regresar:hover{
-        font-size: 18px;
-        color: #0066cc;
-    }
-
-    /* Directorio */
-    .direcBack{
-        padding: 40px;
-        text-align: center;
-        background-color: #969595;
-    }
-    .tit-direct{
-    font-family: 'Poppins', sans-serif;
-    color: white;
-    font-size: x-large;
-    font-weight: 500;
-    margin-top: 20px;
-}
-    .btnDirect {
-        background-color: #d5d5d5;
-        background-size: cover;
-        background-position: center;
-        display: inline-block;
-        border: none;
-        padding: 20px;
-        width: 100px;
-        border-radius: 900px;
-        height: 100px;
-        transition: all 0.5s;
-        cursor: pointer;
-    }
-    .btnDirect:hover {
-        background: linear-gradient(90deg, #5f9cd5 0%, #96d1e0 100%);
-        color: #0066cc;
-        width: 110px;
-        height: 110px;
-    }
-    .btn-cerrar-sesion{
-        margin-right: 15px;
-        padding: 15px 30px;
-        font-size: 18px;
-        font-weight: 600;
-        border-radius: 5px;
-        border: none;
-        cursor: pointer;
-
-        font-family: Roboto, sans-serif;
-        color: #fff;
-        background: linear-gradient(90deg, #707070 0%, rgba(102, 118, 124, 0.74) 100%);
-        transition : 893ms;
-        transform: translateY(0);
-        align-items: center;
-    }
-    .btn-cerrar-sesion:hover{
-        background: linear-gradient(90deg, #5f9cd5 0%, #96d1e0 100%);
-        color: #0066cc;
-        padding: 15px 35px;
+        width: 7%;
+        text-align: right;
+        margin-top: 0;
+        margin-right: 20px;
     }
     .imgbtn{
         width: 100%;
-    }
-    .h3-direct{
-        font-family: Roboto, sans-serif;
-        font-weight: 400;
-        color: #484647;
-    }
-
-    .direct-main-container{
-        background-color: rgba(255, 255, 255, 0.87);
-        padding: 60px 60px 30px 60px;
-        color: black;
-        border-radius: 10px;
-        border: solid 2px transparent;
-        background-clip: padding-box;
-        box-shadow: 10px 10px 10px  rgba(46, 54, 68, 0.03);
-        backdrop-filter: blur(30px);
-        margin-top: 30px;
-    }
-    .directContainer{
-        text-align: left;
-        position: relative;
-        display: inline-block;
-        margin-right: 20px;
-        margin-left: 20px;
-    }
-    .btn-direct-container{
-        text-align: center;
     }
     .direct-imgfloat{
         float: left;
@@ -516,23 +610,18 @@ body {
         padding: 10px;
         border-radius: 10px;
     }
-    .cerrar-sesion{
-        margin-top: 60px;
+    .imgFloat-right{
+        float: left;
+        width: 30%;
+        text-align: right;
+        margin-top: 10px;
+        margin-bottom: 0;
+        margin-right: 20px;
+        background: linear-gradient(90deg, rgba(95, 156, 213, 0.34) 0%, rgba(150, 209, 224, 0.37) 100%);
+        color: #0066cc;
+        padding: 10px;
+        border-radius: 10px;
     }
-
-    /* Registros */
-    .registros-main-container{
-
-    }
-    .h2-registros{
-        font-weight: 400;
-        color: #636162;
-    }
-
-
-
-
-    /* IDS */
 
 
 
